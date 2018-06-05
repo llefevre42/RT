@@ -1,0 +1,124 @@
+{"scene":{
+	"size":[800, 800],
+	"ambiante":[0.5],
+	"background":[0, 0, 1],
+	"cam":{
+		"origine": [0, 600, 3000]
+	},
+	"light":{
+		"origine": [-300, 500, 0],
+		"lum": [1, 1, 2],
+		"affichage": [1]
+	},
+	"light":{
+		"origine": [300, 500, 700],
+		"lum": [1, 1, 2],
+		"affichage": [1]
+	},
+	"plan":{
+		"origine": [-400, 0, 100],
+		"couleur": [1, 0, 0],
+		"quad": [5, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, -8000]
+	},
+	"plan":{
+		"origine": [0, 0, 350],
+		"couleur": [0, 1, 0],
+		"quad": [1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1000],
+		"transf":{
+			"plan":{
+				"extrude":[0],
+				"origine": [0, 100, 0],
+				"direction": [0, 1, 0]
+			},
+			"plan":{
+				"extrude":[0],
+				"origine": [0, -100, 0],
+				"direction": [0, -1, 0]
+			}
+		}
+	},
+	"plan":{
+		"origine": [-200, 0, -600],
+		"couleur": [1, 1, 0],
+		"quad": [.1, 0, 0, 0, 0, 0, 0, 0, -0.1, 0, -50, 0, 0],
+		"transf":{
+			"plan":{
+				"extrude":[0],
+				"origine": [0, 200, 0],
+				"direction": [0, 1, 0]
+			},
+			"plan":{
+				"extrude":[0],
+				"origine": [0, 0, -1000],
+				"direction": [0, 0, -1]
+			},
+			"plan":{
+				"extrude":[0],
+				"origine": [0, 0, -200],
+				"direction": [0, 0, 1]
+			},
+			"plan":{
+				"extrude":[0],
+				"origine": [600, 0, 0],
+				"direction": [1, 0, 0]
+			},
+			"plan":{
+				"extrude":[0],
+				"origine": [-600, 0, 0],
+				"direction": [-1, 0, 0]
+			},
+			"plan":{
+				"extrude":[0],
+				"origine": [0, -100, 0],
+				"direction": [0, -1, 0]
+			}
+		}
+	},
+	"plan":{
+		"origine": [300, -100, -400],
+		"couleur": [0.5, 0.5, 1],
+		"quad": [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, -50, 0, 0],
+		"transf":{
+			"plan":{
+				"extrude":[0],
+				"origine": [0, 200, 0],
+				"direction": [0, 1, 0]
+			}
+		}
+	},
+	"plan":{
+		"origine": [300, -100, 200],
+		"couleur": [0.1, 0.7, 0.4],
+		"quad": [2.5, 0, 0, 0, 0, 0, 0, 0, 0.1, 0, 0, 0, -4000],
+		"transf":{
+			"plan":{
+				"extrude":[0],
+				"origine": [0, 200, 0],
+				"direction": [0, 1, 0]
+			},
+			"plan":{
+				"extrude":[0],
+				"origine": [0, -100, 0],
+				"direction": [0, -1, 0]
+			}
+		}
+	},
+	"plan":{
+		"origine": [0, -100, 0],
+		"couleur": [1, 1, 1],
+		"direction": [0, -1, 0],
+		"volume": [1],
+		"transf":{
+			"sphere":{
+				"extrude":[4],
+				"origine": [0, 500, 0],
+				"rayon": [900]
+			},
+			"plan":{
+				"extrude":[0],
+				"origine": [0, -150, 0],
+				"direction": [0, -1, 0]
+			}
+		}
+	}
+}}

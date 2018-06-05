@@ -1,0 +1,26 @@
+BLANK couleur 0 1 0 volume 1
+TRANSF UNION SPHERE origine 0 900 0 rayon 250
+TRANSF TRANSF EXTR PLAN origine 0 900 0 direction 0 -1 0
+TRANSF TRANSF EXTR SPHERE origine 100 1000 200 rayon 30 couleur 0.1 0.1 0.1
+TRANSF TRANSF EXTR SPHERE origine -100 1000 200 rayon 30 couleur 0.1 0.1 0.1
+TRANSF UNION BLANK
+TRANSF TRANSF UNION CYLINDRE origine -300 150 0 rayon 50 direction 0 1 0
+TRANSF TRANSF UNION CYLINDRE origine 300 150 0 rayon 50 direction 0 1 0
+TRANSF TRANSF EXTR PLAN origine 0 800 0 direction 0 1 0
+TRANSF TRANSF EXTR PLAN origine 0 450 0 direction 0 -1 0
+TRANSF UNION SPHERE origine -300 800 0 rayon 50 direction 0 1 0
+TRANSF UNION SPHERE origine 300 800 0 rayon 50 direction 0 1 0
+TRANSF UNION SPHERE origine -300 450 0 rayon 50 direction 0 1 0
+TRANSF UNION SPHERE origine 300 450 0 rayon 50 direction 0 1 0
+TRANSF UNION CYLINDRE origine 0 150 0 rayon 250 direction 0 1 0
+TRANSF TRANSF EXTR PLAN origine 0 875 0 direction 0 1 0
+TRANSF TRANSF EXTR PLAN origine 0 350 0 direction 0 -1 0
+TRANSF UNION BLANK
+TRANSF TRANSF UNION CYLINDRE origine -100 50 0 rayon 50 direction 0 1 0
+TRANSF TRANSF UNION CYLINDRE origine 100 50 0 rayon 50 direction 0 1 0
+TRANSF TRANSF EXTR PLAN origine 0 290 0 direction 0 1 0
+TRANSF TRANSF EXTR PLAN origine 0 50 0 direction 0 -1 0
+TRANSF UNION SPHERE origine -100 50 0 rayon 50 direction 0 1 0
+TRANSF UNION SPHERE origine 100 50 0 rayon 50 direction 0 1 0
+TRANSF UNION SPHERE origine -100 290 0 rayon 50 direction 0 1 0
+TRANSF UNION SPHERE origine 100 290 0 rayon 50 direction 0 1 0

@@ -1,0 +1,14 @@
+WEIGHT 600
+WIDTH 800
+BACKGROUND 0.2 0.2 0.2
+CAM origine (0 300 800) rotation -20 (1 0 0)
+LUM AMBIANTE 0.4
+
+LIGHT origine(0 150 300) lum(1 1 1) couleur (1 1 1) affichage 1
+
+CYLINDRE lum 1 1 1 direction 0.3 1 0 rayon 5 couleur 0.1 0.9 0.1 limits -1234 0 -1234 0 -200 100
+CYLINDRE transp 0 origine (0 20 100) couleur (0 1 0) lum (1 1 1) rayon 20 direction (1 0 0) limit -100 0 0 20 -1234 0
+SPHERE reflec 0 transp 99 indice 1.1 origine (-80 60 100) couleur(1 1 1) lum (1 1 1) rayon 40 
+SPHERE reflec 60 transp 0 origine (80 60 100) couleur(1 0.1 0.1) lum (1 1 1) rayon 40 
+PLAN reflec 50 transp 90 indice 1.5 origine (0 5 0) couleur (0.4 0.4 1) lum (0.6 0.6 0) direction (0 1 0) limit -500 500 -1234 0 -500 500
+CONE reflec 0 origine (100 50 0) angle 30 couleur (0 0 1) lum (1 1 1) direction (0 1 0) limit -1234 0 -10 100 -1234 0

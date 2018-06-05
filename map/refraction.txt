@@ -1,0 +1,12 @@
+WIDTH 1000
+HEIGHT 1000
+AMBIANTE 0.3
+
+CAM origine 0 70 500
+LUM AMBIANTE 0.4
+BACKGROUND 0.2 0.2 0.2
+LIGHT affichage 1 origine 0 200 100 couleur 1 1 1 lum 1 1 1
+PLAN origine 0 0 0 direction 0 1 0 couleur 0. 0. 0.8 reflec 0 transp 60 indice 1.1
+PLAN origine 0 -500 0 direction 0 1 0 couleur 0. 0. 0.8 reflec 0 transp 0 
+CYLINDRE direction 0.1 1 0 couleur 0 1 0 rayon 10 origine -50 0 100
+SPHERE origine 50 0 0 couleur 1 0 0 rayon 20

@@ -1,0 +1,19 @@
+WIDTH  1000
+HEIGHT 1000
+CAM origine 150 150 500 point 0 0 0
+
+BACKGROUND 0.15 0.17 0.5
+AMBIANTE 0.4
+LIGHT origine 0 0 0
+
+SPHERE origine 0 0 0 rayon 100 couleur 1 0 0 volume 1
+TRANSF EXTR PLAN direction 0 1 0 origine 0 50 0
+TRANSF EXTR PLAN direction 0 -1 0 origine 0 -50 0
+TRANSF EXTR PLAN direction 1 0 0 origine 50 0 0
+TRANSF EXTR PLAN direction -1 0 0 origine -50 0 0
+TRANSF EXTR PLAN direction 0 0 1 origine 0 0 50
+TRANSF EXTR PLAN direction 0 0 -1 origine 0 0 -50
+TRANSF EXTR CYLINDRE origine 0 0 0 direction 0 0 1 rayon 25
+TRANSF EXTR CYLINDRE origine 0 0 0 direction 1 0 0 rayon 25
+TRANSF EXTR CYLINDRE origine 0 0 0 direction 0 1 0 rayon 25
+

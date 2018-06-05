@@ -1,0 +1,31 @@
+HEIGHT 1000
+WIDTH 1000
+CAM origine (0 0 6000)
+LUM AMBIANTE 0.4
+BACKGROUND 0 0 0
+
+LIGHT origine -1500 1500 0 lum 1 1 2 affichage 1
+LIGHT origine 1300 0 1000 lum 1 1 2 affichage 1
+LIGHT origine -300 -1000 800 lum 1 1 2 affichage 1
+
+PLAN origine(0, -1200, 0) direction(0, 1, 0) couleur(1., 1., 1.) reflec 100
+PLAN origine(0, 0, -1000) direction(0, 0, 1) couleur(1., 1., 1.)
+
+SPHERE transp 70 rayon 1000 origine(0 0 0) couleur(0.2 1 0.2)
+SPHERE rayon 500 origine(-300 0 0) couleur(0.6 0.6 0.6)
+SPHERE rayon 500 origine(300 0 0) couleur(0.6 0.6 0.6)
+SPHERE rayon 100 origine(330 0 470)
+SPHERE rayon 100 origine(-330 0 470)
+SPHERE rayon 200 origine(550 300 200) couleur(1 1 0.6)
+SPHERE rayon 100 origine(650 450 300) couleur(1 1 0.6)
+
+SPHERE rayon 150 origine(1650 450 300) couleur(0.4 0.2 0.5) transp 70
+SPHERE rayon 150 origine(-650 850 300) couleur(0.4 0.2 0.5) transp 70
+SPHERE rayon 150 origine(-1650 650 300) couleur(0.4 0.2 0.5) transp 70
+SPHERE rayon 150 origine(850 150 1000) couleur(0.4 0.2 0.5) transp 70
+
+PLAN origine(0, 0, 500) direction(0, 0, 1) couleur(1., 0.6, 1.)
+TRANSF EXTR PLAN direction 1 0.8 0 origine 0 150 0
+TRANSF EXTR PLAN direction -1 0.8 0 origine 0 150 0
+TRANSF EXTR PLAN direction -1 -0.8 0 origine 0 -150 0
+TRANSF EXTR PLAN direction 1 -0.8 0 origine 0 -150 0

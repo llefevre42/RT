@@ -1,0 +1,81 @@
+HEIGHT 500
+WIDTH 500
+CAM origine(-200 380 -1200) rotation 200 0.025 1 0.1
+LUM AMBIANTE 0.5 
+BACKGROUND (0 0 1)
+
+//LUMIERE 1
+LIGHT origine(200 310 50) lum(1 1 1) couleur(1 0.85 0.5) affichage 1 rayon 5
+BLANK origine(200 230 50) lum(1 0.5 0.3) couleur (0.1 0.3 1) rayon 100 
+TRANSF EXTR PLAN origine 0 320 0 direction 0 -1 0
+CYLINDRE origine(200 0 50) rayon 1 couleur(0.2 0.2 0.2) direction (0 1 0) lum 1 1 0
+TRANSF EXTR PLAN  origine 0 313 0 direction 0 -1 0 
+TRANSF EXTR PLAN origine 0 500 0 direction 0 1 0
+
+//LUMIERE 2
+LIGHT origine(200 310 -400) lum(1 1 2) couleur(1 0.85 0.5) affichage 1 rayon 5
+SPHERE origine(200 230 -400) lum(1 0.5 0.3) couleur (0.1 0.3 1) rayon 100
+TRANSF EXTR PLAN origine 0 320 0 direction 0 -1 0
+CYLINDRE origine(200 0 -400) rayon 1 couleur(0.2 0.2 0.2) direction (0 1 0)
+TRANSF EXTR PLAN origine 0 313 0 direction 0 -1 0
+TRANSF EXTR PLAN origine 0 500 0 direction 0 1 0
+
+//MURS
+PLAN origine(0 0 1000) reflect 0 direction (0. 0 1) couleur (0.6 0.6 0.6) lum(1 1 0) brillance 100 limit -1000 1000 -1234 0 -1234 0
+PLAN origine(1000 0 0) direction (1 0 0) couleur (0.6 0.6 0.6) lum (1 1 0) brillance 100 limit -1234 0 -1234 0 -1000 1000
+
+
+//PLAFOND
+PLAN origine (0 500 0)  couleur (0.5 0.5 0.5) direction (0 1 0) lum (1 1 0) brillance 100 limit -1000 1000 -1234 0 -1000 1000
+PLAN origine (0 0 0) lum (1 1 1) couleur (0.18 0.11 0.05) direction (0 1 0)
+
+//MIROIR
+PLAN origine 0 0 1000 direction 0 0 1 couleur 1 1 1 volume 0 reflec 70
+TRANSF EXTR PLAN origine 0 100 1000 direction 0 -1 0 
+TRANSF EXTR PLAN origine 0 400 1000 direction 0 1 0 
+TRANSF EXTR PLAN origine -300 0 0 direction -1 0 0 
+TRANSF EXTR PLAN origine 900 0 0 direction 1 0 0 
+
+//PIEDS BILLARD
+CYLINDRE rayon 15 origine 280 0 45 direction 0 1 0 couleur (0.13 0.1 0.05)
+TRANSF UNION CYLINDRE rayon 15 origine 280 0 -125 direction 0 1 0 couleur (0.13 0.1 0.05)
+TRANSF UNION CYLINDRE rayon 15 origine -20 0 -125 direction 0 1 0 couleur (0.13 0.1 0.05)
+TRANSF UNION CYLINDRE rayon 15 origine -20 0 45 direction 0 1 0 couleur (0.13 0.1 0.05)
+TRANSF EXTR PLAN origine 0 110 0 direction 0 1 0
+
+//BILLARd
+PLAN origine (0 130 0) lum (1 1 0.1) couleur (0.1 0.4 0.2) direction (0 1 0)
+TRANSF EXTR PLAN origine -80 130 0 direction -1 0 0
+TRANSF EXTR PLAN origine 330 130 0 direction 1 0 0 
+TRANSF EXTR PLAN origine 0 130 -180 direction 0 0 -1
+TRANSF EXTR PLAN origine 0 130 80 direction 0 0 1
+
+PLAN origine (0 0 -200) lum (1 1 0.1) couleur (0.13 0.1 0.05) direction (0 0 1)
+TRANSF UNION PLAN origine (0 0 100) lum (1 1 0.1) couleur (0.13 0.1 0.05) direction (0 0 -1)
+TRANSF UNION PLAN origine (0 0 80) lum (1 1 0.1) couleur (0.13 0.1 0.05) direction (0 0 -1)
+TRANSF UNION PLAN origine (0 0 -180) lum (1 1 0.1) couleur (0.13 0.1 0.05) direction (0 0 1)
+TRANSF EXTR PLAN origine 0 110 -200 direction 0 -1 0
+TRANSF EXTR PLAN origine 0 140 -200 direction 0 1 0 
+TRANSF EXTR PLAN origine -100 0 -200 direction -1 0 0
+TRANSF EXTR PLAN origine 350 0 -200 direction 1 0 0 
+
+
+PLAN origine (-100 0 0) lum (1 1 0.1) couleur (0.13 0.1 0.05) direction (1 0 0) limit -1234 0 110 140 -200 100
+TRANSF UNION PLAN origine (350 0 0) lum (1 1 0.1) couleur (0.13 0.1 0.05) direction (1 0 0) limit -1234 0 110 140 -200 100
+TRANSF UNION PLAN origine (-80 0 0) lum (1 1 0.1) couleur (0.13 0.1 0.05) direction (1 0 0) limit -1234 0 110 140 -200 100
+TRANSF EXTR PLAN origine 0 110 0 direction 0 -1 0
+TRANSF EXTR PLAN origine 0 140 0 direction 0 1 0 
+TRANSF EXTR PLAN origine 0 0 -200 direction 0 0 -1
+TRANSF EXTR PLAN origine 0 0 100 direction 0 0 1 
+
+CYLINDRE rayon 3.5 direction (1 0 0.05) origine (0 142 -190) couleur (0.6 0.5 0.4) limit -150 240 -1234 0 -1234 0
+TRANSF EXTR PLAN origine -150 142 -190 directionn -1 0 0
+TRANSF EXTR PLAN origine 240 142 -190 directionn 1 0 0
+CYLINDRE rayon 4 direction (1 0 0.05) origine (0 142 -190) couleur (0.1 0.1 0.1) limit 240 420 -1234 0 -1234 0
+TRANSF EXTR PLAN origine 240 142 -190 directionn -1 0 0
+TRANSF EXTR PLAN origine 420 142 -190 directionn 1 0 0
+
+SPHERE origine (70 140 0) lum(1 1 1) couleur (0.8 0.1 0.12) rayon 10
+SPHERE origine (150 140 -40) lum(1 1 1) couleur (1 1 1) rayon 10
+SPHERE origine (50 140 50) lum(1 1 1) couleur (0.8 0.8 0.) rayon 10
+

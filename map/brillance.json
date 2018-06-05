@@ -1,0 +1,35 @@
+{"scene":{
+	"size": [1000, 1000],
+	"ambiante": [0.1],
+	"background": [0.2, 0.2, 0.2],
+	"cam":{
+		"origine": [250, 0, 3000]
+	},
+	"light":{
+		"origine": [0, 0, 500],
+		"lum": [1, 1, 1],
+		"couleur": [0, 1, 0],
+		"affichage": [1]
+	},
+	"light":{
+		"origine": [250, 0, 500],
+		"lum": [1, 1, 1],
+		"couleur": [0, 0, 1],
+		"affichage": [1]
+
+	},
+	"light":{
+		"origine": [500, 0, 500],
+		"lum": [1, 1, 1],
+		"couleur": [1, 0, 0],
+		"affichage": [1]
+
+	},
+	"plan":{
+		"origine":[0, 0, 0],
+		"direction": [0, 0, 1],
+		"couleur": [1, 1, 1],
+		"limite": [-250, 750, -200, -100, -1234, 1],
+		"brillance": [1000]
+	}
+}}

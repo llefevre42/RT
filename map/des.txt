@@ -1,0 +1,49 @@
+WIDTH 500
+HEIGHT 500
+CAM origine 200 500 1000 point 0 0 0
+
+LUM AMBIANTE 0.2
+BACKGROUND 0 0 0
+
+LIGHT origine 0 300 200 affichage 1 rayon 3 lum 1 1 1
+
+PLAN origine 0 -50 0 direction 0 -1 0 couleur 0.5 0.5 0.5 volume 1  reflec 0
+TRANSF EXTR PLAN origine 0 -50 0 direction 0 -1 0 couleur 0.4 0.4 0.2 volume 1
+TRANSF TRANSF EXTR SPHERE origine -30 -60 0 rayon 300
+TRANSF EXTR PLAN origine 0 -70 0 direction 0 -1 0
+TRANSF EXTR CYLINDRE rayon 270  origine -30 -50 0 direction 0 1 0
+TRANSF TRANSF EXTR PLAN origine 0 -62 0 direction 0 -1 0
+
+
+//DES
+SPHERE origine 0 0 0 rayon 100 couleur 1 1 1 volume 1
+TRANSF EXTR PLAN direction 0 1 0 origine 0 50 0
+TRANSF EXTR PLAN direction 0 -1 0 origine 0 -50 0
+TRANSF EXTR PLAN direction 1 0 0 origine 50 0 0
+TRANSF EXTR PLAN direction -1 0 0 origine -50 0 0
+TRANSF EXTR PLAN direction 0 0 1 origine 0 0 50
+TRANSF EXTR PLAN direction 0 0 -1 origine 0 0 -50
+
+TRANSF EXTR PLAN direction 1 1 1 origine 50 35 50
+TRANSF EXTR PLAN direction -1 1 1 origine -50 35 50
+TRANSF EXTR PLAN direction -1 1 -1 origine -50 35 -50
+TRANSF EXTR PLAN direction 1 1 -1 origine 50 35 -50
+
+TRANSF EXTR PLAN direction 1 -1 1 origine 50 -35 50
+TRANSF EXTR PLAN direction -1 -1 1 origine -50 -35 50
+TRANSF EXTR PLAN direction -1 -1 -1 origine -50 -35 -50
+TRANSF EXTR PLAN direction 1 -1 -1 origine 50 -35 -50
+
+//1
+TRANSF EXTR SPHERE rayon 23 origine 0 0 70 couleur 0.3 0.3 0.3
+
+//3
+TRANSF EXTR SPHERE rayon 23 origine 0 70 0 couleur 0.3 0.3 0.3
+TRANSF EXTR SPHERE rayon 23 origine 25 70 25 couleur 0.3 0.3 0.3
+TRANSF EXTR SPHERE rayon 23 origine -25 70 -25 couleur 0.3 0.3 0.3
+//4
+TRANSF EXTR SPHERE rayon 23 origine 70 25 25 couleur 0.3 0.3 0.3
+TRANSF EXTR SPHERE rayon 23 origine 70 25 -25 couleur 0.3 0.3 0.3
+TRANSF EXTR SPHERE rayon 23 origine 70 -25 25 couleur 0.3 0.3 0.3
+TRANSF EXTR SPHERE rayon 23 origine 70 -25 -25 couleur 0.3 0.3 0.3
+

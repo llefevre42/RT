@@ -1,0 +1,33 @@
+WIDTH 800
+HEIGHT 800
+CAM origine 0 600 3000 point 0 200 -200
+BACKGROUND 0 0 1
+AMBIANTE 0.5
+
+LIGHT origine -300 500 0 lum 1 1 2 affichage 1
+LIGHT origine 300 500 700 lum 1 1 2 affichage 1
+
+QUAD origine -400 0 100 couleur 1 0 0 equ 5 0 0 0 1 0 0 0 3 0 0 0 -8000
+
+QUAD origine 0 0 350 couleur 0 1 0 equ 1 0 0 0 -1 0 0 0 1 0 0 0 -1000
+TRANSF EXTR PLAN origine 0 100 0 direction 0 1 0
+TRANSF EXTR PLAN origine 0 -100 0 direction 0 -1 0
+
+QUAD origine -200 0 -600 couleur 1 1 0 equ .1 0 0 0 0 0 0 0 -0.1 0 -50 0 0
+TRANSF EXTR PLAN origine 0 -100 0 direction 0 -1 0
+TRANSF EXTR PLAN origine -600 0 0 direction -1 0 0
+TRANSF EXTR PLAN origine 600 0 0 direction 1 0 0
+TRANSF EXTR PLAN origine 0 0 -200 direction 0 0 1
+TRANSF EXTR PLAN origine 0 0 -1000 direction 0 0 -1
+TRANSF EXTR PLAN origine 0 200 0 direction 0 1 0
+
+QUAD origine 300 -100 -400 couleur 0.5 0.5 1 equ 1 0 0 0 0 0 0 0 1 0 -50 0 0
+TRANSF EXTR PLAN origine 0 200 0 direction 0 1 0
+
+QUAD origine 300 -100 200 couleur 0.1 0.7 0.4 equ 2.5 0 0 0 0 0 0 0 0.1 0 0 0 -4000
+TRANSF EXTR PLAN origine 0 200 0 direction 0 1 0
+TRANSF EXTR PLAN origine 0 -100 0 direction 0 -1 0
+
+PLAN origine 0 -100 0 couleur 1 1 1 direction 0 -1 0 volume 1
+TRANSF EXTR_INV SPHERE origine 0 500 0 rayon 900
+TRANSF PLAN PLAN origine 0 -150 0 direction 0 -1 0

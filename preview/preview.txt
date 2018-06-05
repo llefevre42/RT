@@ -1,0 +1,10 @@
+HEIGHT 500
+WIDTH 600
+CAM origine(0 0 0) rotation 0 0 0
+LUM AMBIANTE 0.40
+
+LIGHT origine 0 0 0
+SPHERE rayon 0 origine (0 0 0) couleur 0 0 0
+PLAN origine 0 0 0  direction 0 0 1 couleur 0 0 0 light 1 1 1
+CYLINDRE rayon 10 origine 0 0 0 couleur 0 0 0 direction 0 1 0
+CONE rayon 1 origine 0 0 0 couleur 0 0 0 direction 0 1 0

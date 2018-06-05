@@ -1,0 +1,35 @@
+{"scene":{
+	"size": [200, 200],
+	"ambiante": [0.4],
+	"cam":{
+		"origine": [0, 0, 0],
+		"point": [0,0,-1]
+	},
+	"light":{
+		"origine": [0, 0, 500],
+		"lum": [1, 1, 1],
+		"color": [1, 1, 1]
+	},
+	"plan":{
+		"origine":[0, 0, 0],
+		"direction": [0, 0, 1],
+		"couleur": [0, 0, 0]
+	},
+	"sphere":{
+		"origine":[0, 0, 0],
+		"rayon": [0],
+		"direction": [0, 1, 0],
+		"couleur": [1, 1, 1]
+	},
+	"cylindre":{
+		"origine":[0, 0, 0],
+		"rayon": [0],
+		"direction": [0, 1, 0],
+		"couleur": [0, 0, 0]
+	},
+	"cone":{
+		"origine":[0, 0, 0],
+		"rayon": [0],
+		"direction": [0, 1, 0],
+		"couleur": [0, 0, 0]
+	},

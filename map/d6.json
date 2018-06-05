@@ -1,0 +1,89 @@
+{"scene":{
+	"size": [500, 500],
+	"ambiante": [0.2],
+	"background": [0, 0, 1],
+	"cam":{
+		"origine": [0, 0, 800]
+	},
+	"light":{
+		"origine": [0, 300, 200],
+		"lum": [1, 1, 1],
+		"couleur": [1, 1, 1]
+		"affichage": [1]
+	},
+	"plan":{
+		"origine":[0, -50, 0],
+		"direction": [0, -1, 0],
+		"couleur": [0, 1, 0],
+		"volume":[1],
+		"reflec":[0.5],
+		"transf":{
+			"plan":{
+				"extrude":[0],
+				"origine":[0, -50, 0],
+				"direction": [0, -1, 0],
+				"couleur": [0.4, 0.4, 0.2],
+				"volume":[1],
+				"transf":{
+					"sphere":{
+						"extrude":[0],
+						"origine":[-30,-60,0],
+						"rayon": [300]
+					}
+				}
+			},
+			"plan":{
+				"extrude":[0],
+				"origine":[0, -70, 0],
+				"direction": [0, -1, 0]
+			},
+			"cylindre":{
+				"extrude":[0],
+				"origine":[-30, -50, 0],
+				"rayon": [270],
+				"direction": [0, 1, 0],
+				"transf":{
+					"plan":{
+						"extrude":[0],
+						"origine":[0, -62, 0],
+						"direction": [0, -1, 0]
+					}
+				}
+			}
+		}	
+	},
+	"sphere":{
+		"origine":[0, 0, 0],
+		"rayon": [100],
+		"couleur": [1, 1, 1],
+		"volume":[1],
+		"transf":{
+			"plan":{"extrude":[0],"origine":[0, 50, 0],"direction": [0, 1, 0]},
+			"plan":{"extrude":[0],"origine":[0, -50, 0],"direction": [0, -1, 0]},
+			"plan":{"extrude":[0],"origine":[50, 0, 0],"direction": [1, 0, 0]},
+			"plan":{"extrude":[0],"origine":[-50, 0, 0],"direction": [-1, 0, 0]},
+			"plan":{"extrude":[0],"origine":[0, 0, 50],"direction": [0, 0, 1]},
+			"plan":{"extrude":[0],"origine":[0, 0, -50],"direction": [0, 0, -1]},
+
+			"plan":{"extrude":[0],"origine":[50, 35, 50],"direction": [1, 1, 1]},
+			"plan":{"extrude":[0],"origine":[-50, 35, 50],"direction": [-1, 1, 1]},
+			"plan":{"extrude":[0],"origine":[-50, 35, -50],"direction": [-1, 1, -1]},
+			"plan":{"extrude":[0],"origine":[50, 35, -50],"direction": [1, 1, -1]},
+
+			"plan":{"extrude":[0],"origine":[50, -35, 50],"direction": [1, -1, 1]},
+			"plan":{"extrude":[0],"origine":[-50, -35, 50],"direction": [-1, -1, 1]},
+			"plan":{"extrude":[0],"origine":[-50, -35, -50],"direction": [-1, -1, -1]},
+			"plan":{"extrude":[0],"origine":[50, -35, -50],"direction": [1, -1, -1]},
+
+			"sphere":{"extrude":[0],"rayon":[23],"origine":[0, 0, 70],"direction": [0.3, 0.3, 0.3], "couleur":[0, 0, 0]},
+			"sphere":{"extrude":[0],"rayon":[23],"origine":[0, 70, 0],"direction": [0.3, 0.3, 0.3], "couleur":[0, 0, 0]},
+			"sphere":{"extrude":[0],"rayon":[23],"origine":[25, 70, 25],"direction": [0.3, 0.3, 0.3], "couleur":[0, 0, 0]},
+			"sphere":{"extrude":[0],"rayon":[23],"origine":[-25, 70, -25],"direction": [0.3, 0.3, 0.3], "couleur":[0, 0, 0]},
+			"sphere":{"extrude":[0],"rayon":[23],"origine":[70, 25, 25],"direction": [0.3, 0.3, 0.3], "couleur":[0, 0, 0]},
+			"sphere":{"extrude":[0],"rayon":[23],"origine":[70, 25, -25],"direction": [0.3, 0.3, 0.3], "couleur":[0, 0, 0]},
+			"sphere":{"extrude":[0],"rayon":[23],"origine":[70, -25, 25],"direction": [0.3, 0.3, 0.3], "couleur":[0, 0, 0]},
+			"sphere":{"extrude":[0],"rayon":[23],"origine":[70, -25, -25],"direction": [0.3, 0.3, 0.3], "couleur":[0, 0, 0]}
+		}
+	}
+}
+}

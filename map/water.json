@@ -1,0 +1,52 @@
+{"scene":{
+	"size": [1000, 1000],
+	"ambiante": [0.3],
+	"background": [0.46, 0.71, 0.996],
+	"cam":{
+		"origine": [450, 150, 800],
+		"rotation": [-8, 1, 0, 0]
+	},
+	"light":{
+		"origine": [300, 200, 200],
+		"couleur": [1, 1, 1],
+		"lum": [1, 1, 1],
+		"affichage": [1]
+	},
+	"plan":{
+		"origine":[0, 0, 0],
+		"matiere":[1],
+		"rug": [0.5],
+		"indice": [1.2],
+		"reflec": [0],
+		"transp": [70],
+		"lum": [1, 1, 1],
+		"direction": [0, 1, 0],
+		"couleur": [0.1, 0.3, 1]
+	},
+	"plan":{
+		"origine":[0, -500, 0],
+		"direction": [0, 1, 0],
+		"couleur": [0.1, 0.3, 0.7],
+		"lum": [2, 0, 0]
+	},
+	"sphere":{
+		"transp":[0],
+		"rayon":[30],
+		"origine":[400, -10, 100],
+		"couleur":[1, 0, 0],
+		"brillance":[80]
+	},
+	"cylindre":{
+		"origine":[600, 0, -100],
+		"couleur":[0, 1, 0],
+		"direction":[0.3, 1, 0.3],
+		"transf":{
+			"plan":{
+				"extrude":[0],
+				"origine":[600, 100, 0],
+				"direction":[0.3, 1, 0.3]
+			}
+		}
+	}
+}
+}

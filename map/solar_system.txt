@@ -1,0 +1,18 @@
+HEIGHT 600
+WIDTH 800
+CAM origine(0 0 1000)
+BACKGROUND (0 0 0.)
+LUM AMBIANTE 0.2
+
+LIGHT origine(0 0 0)  luminosite(1 1 0.8) couleur(1 1 1) affichage 1 rayon 20
+LIGHT origine(500 0 -100)  luminosite(1 1 0.8) couleur(1 1 1) affichage 1 rayon 20
+SPHERE rayon 15 origine(-150 0 -20) couleur(1 0 0.2) lum (1 0.4 1) 
+SPHERE rayon 20 origine(-150 0 -20) couleur(0.5 0.1 0.2) direction 0 1 0 
+TRANSF EXTR PLAN origine -150 1 -20 direction 0 1 0
+TRANSF EXTR PLAN origine -150 -1 -20 direction 0 -1 0
+SPHERE rayon=3 origine(60 12 -120) couleur(0.4 0.4 0.2) 
+SPHERE rayon=13 origine(70 0 -120) couleur(0.8 0.4 0.2) brillance 10
+
+SPHERE rayon=10 origine(-75 0 -110) couleur(0 0 0.8) lum(1, 1, 1)
+
+SPHERE rayon 200 origine(450 0 -600) couleur (0.41 0.51 0.41) lum (1 1 0) brillance 100 

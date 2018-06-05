@@ -1,0 +1,58 @@
+WIDTH 700
+HEIGHT 700
+CAM origine 400 800 2800 point 0 400 0
+LUM AMBIANTE 0.4
+BACKGROUND 0.13 0.17 .42
+
+LIGHT origine 0 300 400
+LIGHT origine 0 700 -100 affichage 1
+
+
+
+//SOL
+PLAN origine 0 -20 0 direction 0 1 0 couleur 0 1 0
+
+/DOUVE
+PLAN origine 0 -20 0 direction 0 1 0 couleur 0 0 1 volume 0 matiere 1 rug 0.2 reflec 80 
+TRANSF EXTR_INV SPHERE origine 0 -20 0 rayon 600
+
+//TOUR
+BLANK origine 0 200 0 volume 1 couleur 0.5 0.5 0.5 
+TRANSF UNION CYLINDRE origine 0 0 0 direction 0 1 0 rayon 150 matiere 2 
+TRANSF TRANSF EXTR PLAN origine 0 0 0 direction 0 -1 0 
+TRANSF TRANSF EXTR PLAN origine 0 400 0 direction 0 1 0
+
+TRANSF UNION CONE origine 0 200 0 direction 0 1 0 angle 50 couleur 0.495 0.348 0.207
+TRANSF TRANSF EXTR PLAN origine 0 100 0 direction 0 1 0 
+TRANSF TRANSF EXTR PLAN origine 0 -20 0 direction 0 -1 0
+
+TRANSF EXTR CYLINDRE origine 0 100 0 rayon 40 direction 0 0 1
+TRANSF TRANSF EXTR PLAN origine 0 100 0 direction 0 -1 0
+TRANSF EXTR PLAN origine -40 100 0 direction 1 0 0
+TRANSF TRANSF EXTR PLAN origine 40 100 0 direction 1 0 0
+TRANSF TRANSF EXTR PLAN origine 0 100 0 direction 0 1 0
+TRANSF TRANSF EXTR PLAN origine 0 73.5 0 direction 0 -1 0 couleur 1 0 0 
+
+//CRENEAUX
+TRANSF UNION CYLINDRE origine 0 0 0 rayon 200 direction 0 1 0 matiere 2
+TRANSF TRANSF EXTR PLAN origine 0 500 0 direction 0 1 0 
+TRANSF TRANSF EXTR PLAN origine 0 400 0 direction 0 -1 0
+TRANSF TRANSF EXTR CYLINDRE origine 0 0 0 rayon 150 direction 0 1 0 
+
+TRANSF TRANSF EXTR BLANK
+TRANSF TRANSF TRANSF UNION PLAN origine -30 0 0 direction 1 0 0
+TRANSF TRANSF TRANSF TRANSF EXTR PLAN origine 30 430 0 direction 1 0 0
+
+TRANSF TRANSF TRANSF UNION PLAN origine 60 0 110 direction 1 0 -1
+TRANSF TRANSF TRANSF TRANSF EXTR PLAN origine 110 0 60 direction 1 0 -1
+
+TRANSF TRANSF TRANSF UNION PLAN origine -60 0 110 direction -1 0 -1
+TRANSF TRANSF TRANSF TRANSF EXTR PLAN origine -110 0 60 direction -1 0 -1
+
+TRANSF TRANSF TRANSF UNION PLAN origine 0 0 30 direction 0 0 -1
+TRANSF TRANSF TRANSF TRANSF EXTR PLAN origine 0 0 -30 direction 0 0 -1
+
+TRANSF TRANSF TRANSF EXTR PLAN origine 0 430 0 direction 0 -1 0
+
+
+

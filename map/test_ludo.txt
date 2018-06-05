@@ -1,0 +1,24 @@
+HEIGHT 1000
+WIDTH 1000
+CAM origine (30 30 190)
+LUM AMBIANTE 0.4
+BACKGROUND (0.2 0.2 0.2)
+PLAN origine(0, 0, -200) direction(0, 0, 1) couleur(1., 1., 1.) lum 1 1 1 reflec 100
+PLAN origine(0, 0, 200)  direction(0, 0, 1) couleur(1., 1., 1.) lum 1 1 1 reflec 100
+PLAN origine(200, 0, 0)  direction(1, 0, 0) couleur(1., 1., 1.)lum 1 1 1 reflec 100
+PLAN origine(-200, 0, 0)  direction(1, 0, 0) couleur(1., 1., 1.) lum 1 1 1 reflec 100
+PLAN origine(0, 200, 0)  direction(0, 1, 0) couleur(1., 1., 1.)lum 1 1 1 reflec 100
+PLAN origine(0, -200, 0) matiere 1 rug 0.1  direction(0, 1, 0) couleur(1., 1., 1.) lum 1 1 1 reflec 100
+LIGHT origine(0, 0, 100) lum(1 0.5 0.3) couleur(1 1 1) affichage 0
+LIZGHT origine(0, 30, 250) lum(0.3 0.5 0.3) couleur(1 0 0) affichage 0
+LIGZHT origine(30, 0, 250) lum(0.3 0.5 0.3) couleur(0 0 1) affichage 0
+SPHERE rayon 5 origine(0 10 120) couleur(0.2 0.7 0.2)
+SPHERE rayon 5 origine(10 0 80) couleur(0.7 0.2 0.2)
+SPHERE rayon 5 origine(0 20 10) couleur(0.4 0.2 0.5)
+SPHERE rayon 5 origine(0 80 10) couleur(0.2 0.5 0.7)
+SPHERE rayon 5 origine(50 20 100) couleur(0.5 0.2 0.1)
+SPHERE rayon 5 origine(30 80 150) couleur(0.4 0.8 0.7)
+CZYLINDRE rayon 3 origine(20 20 80) couleur(0.5 0.1 0.2) direction 1 1 0 limit -1 1
+CZYLINDRE rayon 3 origine(20 20 80) couleur(0.1 0.4 0.2) direction 0 1 1 limit -1 1
+CZYLINDRE rayon 3 origine(20 20 80) couleur(0.5 0.1 0.8) direction 1 0 1 limit -1 1
+CZYLINDRE rayon 3 origine(20 20 80) couleur(0.5 0.5 0.7) direction -1 1 0 limit -1 1

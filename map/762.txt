@@ -1,0 +1,21 @@
+WIDTH 400
+HEIGHT 400
+CAM origine 0 400 500 
+LUM AMBIANTE 0.3
+BACKGROUND 0.1 0.1 0.8
+
+LIGHT origine 0 650 500 lum 1 1 3
+
+BLANK  couleur 0.8 0.6 0.2 volume 1
+TRANSF UNION CYLINDRE origine 0 0 0 direction 0 1 0 rayon 75
+TRANSF TRANSF EXTR PLAN origine 0 -220 0 direction 0 -1 0
+TRANSF TRANSF EXTR PLAN origine 0 360 0 direction 0 1 0
+TRANSF UNION CONE origine 0 650 0 direction 0 1 0 angle 12.3 couleur 0.6 0.37 0.1
+TRANSF TRANSF EXTR PLAN origine 0 620 0 direction 0 1 0
+TRANSF TRANSF EXTR PLAN origine 0 360 0 direction 0 -1 0
+TRANSF EXTR_INV CYLINDRE origine 0 0 0 direction 0 1 0 rayon 65
+TRANSF TRANSF EXTR PLAN origine 0 320 0 direction 0 -1 0
+TRANSF EXTR_INV CONE origine 0 465 0 direction 0 1 0 angle 24.2
+TRANSF TRANSF EXTR PLAN origine 0 320 0 direction 0 20 0
+TRANSF EXTR_INV CONE origine 0 -350 0 direction 0 1 0 angle 24.2
+TRANSF TRANSF EXTR PLAN origine 0 -200 direction 0 -1 0
