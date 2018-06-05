@@ -14,7 +14,7 @@ Ludovic Lefevre
 ## Bases du projet :
 Cree un moteur 3d sur le principe du Raytracing en groupe de 4 perssonne
 
-![](amdro.png)
+![](andro.png)
 
 ## Option :
 - refraction
@@ -53,7 +53,10 @@ Cree un moteur 3d sur le principe du Raytracing en groupe de 4 perssonne
 
 - changement de scenes sans reboot
 - rotation des object simple et composer
-- screenshot 
+
+![](de.png)
+
+- scrieenshot 
 - mode "split" d'une meme scene
 
 ![](split.png)
