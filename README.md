@@ -56,7 +56,7 @@ Cree un moteur 3d sur le principe du Raytracing en groupe de 4 perssonne
 
 ![](de.png)
 
-- scrieenshot 
+- screenshot 
 - mode "split" d'une meme scene
 
 ![](split.png)
